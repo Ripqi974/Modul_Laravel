@@ -1,59 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Sistem Manajemen Sepatu – Cibaduyut Shoes
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Deskripsi Program
+Program ini merupakan aplikasi web sederhana yang dibuat menggunakan framework Laravel untuk mengelola data produk sepatu pada toko Cibaduyut. Sistem ini memungkinkan pengguna untuk melihat daftar sepatu, melakukan login, menyimpan produk ke dalam wishlist, serta menambahkan data sepatu baru melalui form yang tersedia.
 
-## About Laravel
+Aplikasi ini dibuat sebagai latihan pengembangan Sistem Informasi Berbasis Web dengan menerapkan konsep MVC (Model–View–Controller) yang merupakan arsitektur utama pada Laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Fitur Utama Program
+1. Sistem Login
+Program menyediakan halaman login yang digunakan untuk melakukan autentikasi pengguna sebelum mengakses sistem.
+Login dilengkapi dengan fitur Remember Me yang menggunakan cookie sehingga username dapat tersimpan secara otomatis.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Fitur ini menggunakan:
+- Session untuk menyimpan status login
+- Cookie untuk menyimpan username
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2. Dashboard Sistem
+Pada halaman utama terdapat dashboard yang menampilkan ringkasan informasi seperti:
+- Jumlah stok sepatu
+- Jumlah kategori sepat
+- Total produk yang tersedia
 
-## Learning Laravel
+Dashboard ini membantu pengguna untuk melihat gambaran kondisi stok secara cepat.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+3. Daftar Produk Sepatu
+Program menampilkan beberapa produk sepatu dalam bentuk card menggunakan Bootstrap.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Setiap produk menampilkan informasi:
+- Gambar sepatu
+- Nama sepatu
+- Harga
+- Jumlah stok
 
-## Laravel Sponsors
+Selain itu terdapat tombol:
+- Beli
+- Wishlist
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. Wishlist Produk
+Pengguna dapat menyimpan sepatu yang diminati ke dalam wishlist.
+Wishlist akan ditampilkan dalam bentuk modal popup sehingga pengguna dapat melihat daftar sepatu yang disimpan.
 
-### Premium Partners
+Fitur ini menggunakan JavaScript untuk:
+- Menambahkan produk ke wishlist
+- Menampilkan jumlah wishlist
+- Menghapus seluruh wishlist
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+5. Form Tambah Sepatu
+Program menyediakan form untuk menambahkan data sepatu baru dengan beberapa input seperti:
+- Nama sepatu
+- Harga sepatu
+- Stok sepatu
+- Kategori sepatu
 
-## Contributing
+Form ini bertujuan untuk mensimulasikan proses input data produk dalam sistem manajemen inventori.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. Dark Mode
+Program memiliki fitur Mode Gelap yang dapat mengubah tampilan website menjadi lebih nyaman dilihat pada kondisi cahaya rendah.
 
-## Code of Conduct
+Fitur ini dibuat menggunakan:
+- CSS
+- JavaScript
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
